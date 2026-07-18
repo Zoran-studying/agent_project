@@ -40,9 +40,16 @@ agent_project/
 
 ## 环境配置
 
+### 创建 Conda 虚拟环境
 
 ```powershell
+# 创建名为 RAG 的虚拟环境，指定 Python 3.12
+conda create -n RAG python=3.12 -y
+
+# 激活环境
 conda activate RAG
+
+# 安装项目依赖
 python -m pip install -r requirements.txt
 ```
 
