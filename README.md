@@ -55,7 +55,7 @@ python -m pip install -r requirements.txt
 
 ### API 配置
 
-项目已内置 `.env` 配置文件，可直接运行。如需修改，编辑 `.env`：
+填入 API Key 之后可以直接使用，如需修改，编辑 `.env`：
 
 ```dotenv
 # 大模型对话 API
