@@ -62,12 +62,18 @@ Copy-Item .env.example .env
 在 `.env` 中填写自己的 API Key：
 
 ```dotenv
+# 大模型对话 API
 OPENAI_BASE_URL=https://api_2604_w5t3.zlth.cn/v1
 OPENAI_API_KEY=请填写实际密钥
 OPENAI_MODEL=qwen3.6-35b-a3b
 OPENAI_ENABLE_THINKING=false
 OPENAI_MAX_TOKENS=3000
 OPENAI_VERIFY_SSL=true
+
+# Embedding 向量化 API（若不单独配置则复用上方 OPENAI_API_KEY）
+EMBEDDING_MODEL=embedding-3
+EMBEDDING_BASE_URL=https://open.bigmodel.cn/api/paas/v4/embeddings
+EMBEDDING_API_KEY=请填写实际密钥
 ```
 
 ## 运行方式
