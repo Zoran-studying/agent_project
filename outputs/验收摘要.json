@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-07-06T19:37:25",
+  "model": "qwen3.6-35b-a3b",
+  "materials": [
+    "Python实验指导书.md",
+    "Python程序设计课程讲义.md"
+  ],
+  "questions": 5,
+  "followup_query": "Python列表如何添加元素？",
+  "outside_found": false,
+  "outline_sections": 3,
+  "quiz_questions": 5
+}
