@@ -53,27 +53,27 @@ conda activate RAG
 python -m pip install -r requirements.txt
 ```
 
-复制配置模板：
+### API 配置
 
-```powershell
-Copy-Item .env.example .env
-```
-
-在 `.env` 中填写自己的 API Key：
+项目已内置 `.env` 配置文件，可直接运行。如需修改，编辑 `.env`：
 
 ```dotenv
 # 大模型对话 API
-OPENAI_BASE_URL=https://api_2604_w5t3.zlth.cn/v1
-OPENAI_API_KEY=请填写实际密钥
-OPENAI_MODEL=qwen3.6-35b-a3b
+OPENAI_BASE_URL=https://api.xiaomimimo.com/v1
+OPENAI_API_KEY=你的密钥
+OPENAI_MODEL=mimo-v2.5-pro
+OPENAI_VERIFY_SSL=false
 OPENAI_ENABLE_THINKING=false
 OPENAI_MAX_TOKENS=3000
-OPENAI_VERIFY_SSL=true
 
-# Embedding 向量化 API（若不单独配置则复用上方 OPENAI_API_KEY）
-EMBEDDING_MODEL=embedding-3
-EMBEDDING_BASE_URL=https://open.bigmodel.cn/api/paas/v4/embeddings
-EMBEDDING_API_KEY=请填写实际密钥
+# Embedding 向量化 API
+EMBEDDING_MODEL=BAAI/bge-m3
+EMBEDDING_BASE_URL=https://api.siliconflow.cn/v1/embeddings
+EMBEDDING_API_KEY=你的密钥
+
+# RAG 检索参数
+RAG_TOP_K=5
+RAG_SCORE_THRESHOLD=0.45
 ```
 
 ## 运行方式
